@@ -1,0 +1,77 @@
+###### ======== Sistema de administración web "TIENDA VIRTUAL" ======== ######
+- Descripcion: Venta de zapatos,ropa,gorras, etc.
+
+- Requerimientos de la empresa o de la tienda.
+    1. Necesitamos crear un "usuario" donde tenga roles (cliente, administrador, etc.). a la tienda VIRTUAL
+    2. Necesitamos que el modulo "productos", tenga los siguientes requisitos:
+        . Crear o Agregar      (Create)
+            . Agregar nuevo Producto
+        . Consultar    (Read)
+            . Leer la informacion de un producto (buscar por ID, nombre, etc.)
+        . Editar       (Update)
+            . Actualizar la información de un producto
+        . Eliminar     (Delete)
+            . Eliminar un producto.
+
+    3. Necesitamos que el modulo "categorias de marcas", tenga los siguientes requisitos.
+        . Crear        (Create)
+        . Consultar    (Read)
+            . Leer la informacion de una categoria (buscar por ID, nombre, etc.)
+        . Editar       (Update)
+ 
+
+    4. Necesitamos que el modulo "proveedores", tenga los siguientes requisitos.
+        . Crear        (Create)
+        . Consultar    (Read)
+        . Editar       (Update)
+
+- ENTIDADES Y ATRIBUTOS 
+    1. Usuario
+       . id_usuario
+       . name_user
+       . email_user
+       . password_user
+       . roles_user
+       . Fecha&Hora_creacion
+       . Fecha&Hora_ultima_conexion
+
+    2. Productos
+       . id_producto
+       . nombre_prod
+       . precio_compra
+       . precio_venta
+       . descripcion_prod
+       . stock
+       . idcategoria
+       . idproveedores
+       . Fecha&Hora_creacion
+
+    3. Ventas
+       . id_venta
+       . fecha
+       . impuesto
+       . subtotal
+       . total
+       . metodo_pago
+       . monto_dado
+       . vuelto_dado
+       . id_usuario
+       . id_producto
+       
+    4. Categorias
+       . id_categoria
+       . nombre_categ
+       . descripcion_categ
+       . nombre_marca_prod
+       . descripcion_marca_prod
+       . Fecha&Hora_creacion
+
+    5. Proveedores
+       . id
+       . nombre_empresa
+       . direcion_empresa
+       . informacion_contacto (Números de teléfono, dirección de correo electrónico y otros detalles de contacto)
+       . productos_suministrados
+       . comentarios_notas (Proveedor Confiable, siempre entrega a tiempo)
+       . Fecha&Hora_creacion
+       
